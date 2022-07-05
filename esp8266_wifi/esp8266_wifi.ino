@@ -4,11 +4,11 @@
 #include <Wire.h>
 
  
-char* ssid = "internet access";
-char* password =  "CLB39EF9AD";
+char* ssid = "****************";
+char* password =  "**************";
 
 
-String serverName = "http://192.168.11.77/IOT_basic/postUpload.php";
+String serverName = "http://*****************";
 String data,remarks;
 
 const int trig = 5;
