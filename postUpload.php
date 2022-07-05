@@ -10,8 +10,8 @@
         if($data && $remark)
         {
             
-            $con->query("INSERT INTO distance_data (id, distance, timestamp, remarks) VALUES (NULL, '".$data."', current_timestamp(), '".$remark."');");
-            header("location: index.php");
+            // $con->query("INSERT INTO distance_data (id, distance, timestamp, remarks) VALUES (NULL, '".$data."', current_timestamp(), '".$remark."');");
+            
             $var = "ok";
 
         }
@@ -19,6 +19,7 @@
         {
             $var = "invalid";
         }
+        echo $var;
         
         
     }
@@ -26,7 +27,6 @@
     {
         $var = "There is no POST requests.";
     }
-    echo $var;
 
     function test_input($value) {
         $value = trim($value);
