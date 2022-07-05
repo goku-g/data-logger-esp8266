@@ -48,6 +48,10 @@ void send_to_server(String postData) {
       if (httpCode>0) {
         Serial.print("HTTP Response code: ");
         Serial.println(httpCode);
+
+        String payload = http.getString();
+        Serial.print("Payload: ");
+        Serial.println(payload);
       }
       else {
         Serial.print("Error code: ");
