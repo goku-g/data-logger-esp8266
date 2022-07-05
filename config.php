@@ -1,8 +1,8 @@
 <?php 
-$server = "localhost";
-$username = "root";
-$password = "";
-$database = "iot_data_logger";
+$server = "********"; // server name
+$username = "********"; // username from server to access database
+$password = "********"; // password to access database
+$database = "*********"; // database name
 
 $con = mysqli_connect($server,$username,$password,$database);
 
